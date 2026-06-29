@@ -5,7 +5,7 @@ Individual parameter runs are `AUDIT`.
 
 **Target:** Paper A finite-claim audits and the P2 certificate-scanner lane.
 
-**Companion script:** `experimental/restricted_sum_dp.py`
+**Companion script:** `experimental/scripts/restricted_sum_dp.py`
 
 ## Claim
 
@@ -109,19 +109,19 @@ hand-computed finite tables with reproducible certificates.
 Fermat-prime toy check:
 
 ```bash
-python3 experimental/restricted_sum_dp.py --p 17 --subgroup-order 8 --r 3 --expect-size 16
+python3 experimental/scripts/restricted_sum_dp.py --p 17 --subgroup-order 8 --r 3 --expect-size 16
 ```
 
 Paper A style subgroup check:
 
 ```bash
-python3 experimental/restricted_sum_dp.py --p 257 --subgroup-order 16 --r 9 --expect-size 256
+python3 experimental/scripts/restricted_sum_dp.py --p 257 --subgroup-order 16 --r 9 --expect-size 256
 ```
 
 JSON output:
 
 ```bash
-python3 experimental/restricted_sum_dp.py --p 17 --subgroup-order 8 --r 3 --format json
+python3 experimental/scripts/restricted_sum_dp.py --p 17 --subgroup-order 8 --r 3 --format json
 ```
 
 Each run should be interpreted as an `AUDIT` certificate for the specified

@@ -8,7 +8,7 @@
 - **Date:** 2026-06-24.
 - **Subject:** PR #105 (`AllenGrahamHart:codex/m1-cycle120-standalone-proof`,
   head `1c805c3`): `notes/m1/m1_cycle120_standalone_ldsw_proof.md` +
-  `scripts/verify_m1_cycle120_standalone_ldsw_proof.py`. Codex/M1 lane -- this
+  `experimental/scripts/verify_m1_cycle120_standalone_ldsw_proof.py`. Codex/M1 lane -- this
   is an honest independent review, no edits to that branch.
 
 ## What PR #105 claims

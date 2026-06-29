@@ -154,7 +154,7 @@ not count every sub-support.
 The finite verifier
 
 ```text
-experimental/verify_l1_arbitrary_fiber_repair.py
+experimental/scripts/verify_l1_arbitrary_fiber_repair.py
 ```
 
 checks the decomposition identity directly on tiny prime-field cases by

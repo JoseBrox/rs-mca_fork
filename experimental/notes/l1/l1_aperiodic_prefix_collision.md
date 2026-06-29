@@ -564,8 +564,8 @@ and prove a multiplicity bound for them.
 ## Reproduction
 
 ```bash
-python3 experimental/verify_l1_aperiodic_prefix_collision.py
-python3 experimental/verify_l1_aperiodic_prefix_collision.py --format json
+python3 experimental/scripts/verify_l1_aperiodic_prefix_collision.py
+python3 experimental/scripts/verify_l1_aperiodic_prefix_collision.py --format json
 ```
 
 The verifier enumerates all `8008` supports, recomputes the fiber histogram,

@@ -2,7 +2,7 @@
 
 - **Status:** PROVED
 - **Theorem/problem:** agents.md script output standard
-- **Source:** experimental/certificate_emit_example.json
+- **Source:** experimental/data/certificates/certificate_emit_example.json
 
 ## Input Parameters
 
@@ -37,5 +37,5 @@
 | Key | Value |
 | --- | --- |
 | `method` | deterministic tiny example for certificate_emit.py |
-| `script` | experimental/certificate_emit.py |
+| `script` | experimental/scripts/certificate_emit.py |
 | `seed` | none |

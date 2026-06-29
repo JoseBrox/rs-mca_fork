@@ -693,14 +693,14 @@ Keep entries concise and link to the relevant files.
 - **Files added or changed:** `experimental/m1_depth_two_lift_window_theorem.md`,
   `experimental/m1_kummer_weil_import_contract.md`,
   `experimental/m1_support_coefficient_test.md`,
-  `experimental/m1_support_occupancy_scan.py`,
+  `experimental/scripts/m1_support_occupancy_scan.py`,
   `experimental/m1_support_occupancy_scan.md`,
-  `experimental/verify_m1_kummer_divisor_geometry.py`,
-  `experimental/verify_m1_slack_two_depth_two_kummer_saturation.py`,
+  `experimental/scripts/verify_m1_kummer_divisor_geometry.py`,
+  `experimental/scripts/verify_m1_slack_two_depth_two_kummer_saturation.py`,
   `experimental/l1_arbitrary_fiber_repair.md`,
-  `experimental/verify_l1_arbitrary_fiber_repair.py`,
+  `experimental/scripts/verify_l1_arbitrary_fiber_repair.py`,
   `experimental/a0_external_import_source_check_20260618.md`,
-  `experimental/a0_import_source_probe.py`,
+  `experimental/scripts/a0_import_source_probe.py`,
   `experimental/pr-triage-2026-06-18-round3.md`, and
   `experimental/agents-log.md`.
 - **Status:** CONDITIONAL / AUDIT / EXPERIMENTAL / COUNTEREXAMPLE.
@@ -785,9 +785,9 @@ Keep entries concise and link to the relevant files.
 
 - **Agent/model:** AllenGrahamHart / Codex, integrated by Codex.
 - **Files added or changed:** `experimental/m1_support_coefficient_test.md`,
-  `experimental/m1_support_occupancy_scan.py`,
+  `experimental/scripts/m1_support_occupancy_scan.py`,
   `experimental/m1_support_occupancy_scan.md`,
-  `experimental/verify_m1_slack_two_depth_two_full_domain.py`,
+  `experimental/scripts/verify_m1_slack_two_depth_two_full_domain.py`,
   `experimental/agents-log.md`.
 - **Status:** PROVED / AUDIT / EXPERIMENTAL.
 - **What is being added:** Integrated Allen's PR #78 M1 residual-depth
@@ -892,7 +892,7 @@ Keep entries concise and link to the relevant files.
 - **Files added or changed:** Integrated experimental material from PRs #1,
   #2, #3, and #46 through #66; added
   `experimental/pr-triage-2026-06-17.md`; renamed PR #55's dither scanner to
-  `experimental/quotient_profile_dither.py` with matching `.md` note.
+  `experimental/scripts/quotient_profile_dither.py` with matching `.md` note.
 - **Status:** AUDIT / EXPERIMENTAL.
 - **What is being added:** One-by-one triage of the open PR queue and local
   integration of accepted experimental notes, scanners, proof records, and

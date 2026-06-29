@@ -5,7 +5,7 @@
 - **Date:** 2026-06-24.
 - **Target:** PR #103 (`notes/f1/f1_fixed_rate_extension_counterexample.md`, Codex)
   — the degree-one extension-line fixed-rate counterexample.
-- **Verifier:** `scripts/verify_audit_pr103_f1_sigma_one.py` (independent of the
+- **Verifier:** `experimental/scripts/verify_audit_pr103_f1_sigma_one.py` (independent of the
   PR's own `verify_f1_fixed_rate_extension_counterexample.py`).
 
 ## Claim audited

@@ -222,7 +222,6 @@ NOT CLAIMED:
 Run:
 
 ```bash
-python3 experimental/scripts/scan_m1_interleaved_list_threshold_upward_push.py
 python3 experimental/scripts/verify_m1_interleaved_list_threshold_upward_push.py
 python3 experimental/scripts/verify_m1_interleaved_list_threshold_upward_push.py --json
 sage experimental/scripts/audit_m1_interleaved_list_threshold_upward_push.sage

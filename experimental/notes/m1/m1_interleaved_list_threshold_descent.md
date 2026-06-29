@@ -199,7 +199,6 @@ NOT CLAIMED:
 Run:
 
 ```bash
-python3 experimental/scripts/scan_m1_interleaved_list_threshold_descent.py
 python3 experimental/scripts/verify_m1_interleaved_list_threshold_descent.py
 python3 experimental/scripts/verify_m1_interleaved_list_threshold_descent.py --json
 python3 -m json.tool experimental/data/m1_interleaved_list_threshold_descent.json

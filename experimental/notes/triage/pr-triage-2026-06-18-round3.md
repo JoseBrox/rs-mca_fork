@@ -30,14 +30,14 @@ was copied into `experimental/` and logged in `experimental/agents-log.md`.
 
 ```text
 experimental/a0_external_import_source_check_20260618.md
-experimental/a0_import_source_probe.py
+experimental/scripts/a0_import_source_probe.py
 experimental/l1_arbitrary_fiber_repair.md
 experimental/m1_depth_two_lift_window_theorem.md
 experimental/m1_kummer_weil_import_contract.md
 experimental/m1_support_coefficient_test.md
 experimental/m1_support_occupancy_scan.md
-experimental/m1_support_occupancy_scan.py
-experimental/verify_l1_arbitrary_fiber_repair.py
-experimental/verify_m1_kummer_divisor_geometry.py
-experimental/verify_m1_slack_two_depth_two_kummer_saturation.py
+experimental/scripts/m1_support_occupancy_scan.py
+experimental/scripts/verify_l1_arbitrary_fiber_repair.py
+experimental/scripts/verify_m1_kummer_divisor_geometry.py
+experimental/scripts/verify_m1_slack_two_depth_two_kummer_saturation.py
 ```

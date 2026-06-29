@@ -431,7 +431,7 @@ def build_report(cases: list[PeriodicCase]) -> dict[str, Any]:
         "status": STATUS,
         "claim": CLAIM,
         "provenance": {
-            "generator": "experimental/verify_l1_periodic_support_multisequence_reduction.py",
+            "generator": "experimental/scripts/verify_l1_periodic_support_multisequence_reduction.py",
             "created_at_utc": utc_now(),
             "repo_commit": current_repo_commit(),
         },

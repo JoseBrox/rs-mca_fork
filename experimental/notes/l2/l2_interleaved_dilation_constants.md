@@ -202,9 +202,9 @@ of the F1 extension-line questions, kept strictly on the list ledger.
 ## Reproducibility
 
 ```bash
-python3 experimental/verify_l2_interleaved_constants.py
-python3 experimental/verify_l2_interleaved_constants.py --a 9 --format json
-python3 experimental/verify_l2_quotient_core_count.py --self-check
-python3 experimental/verify_l2_quotient_core_count.py
-python3 experimental/verify_l2_extension_coordinate.py
+python3 experimental/scripts/verify_l2_interleaved_constants.py
+python3 experimental/scripts/verify_l2_interleaved_constants.py --a 9 --format json
+python3 experimental/scripts/verify_l2_quotient_core_count.py --self-check
+python3 experimental/scripts/verify_l2_quotient_core_count.py
+python3 experimental/scripts/verify_l2_extension_coordinate.py
 ```

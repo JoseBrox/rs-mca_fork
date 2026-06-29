@@ -273,7 +273,7 @@ B(s),        x,        x-1,        4B(s)x-s^2.
 ```
 
 The finite pullback scanner
-`experimental/search_m1_equal_line_pullback.py` directly stress-tests the
+`experimental/scripts/search_m1_equal_line_pullback.py` directly stress-tests the
 target
 
 ```text
@@ -296,7 +296,7 @@ It tests `4804` tuples and finds no `3p` violation. The largest rows are:
 ```
 
 The full character-spectrum scanner
-`experimental/search_m1_equal_line_pullback_spectrum.py` shows that this
+`experimental/scripts/search_m1_equal_line_pullback_spectrum.py` shows that this
 target should not be promoted to all nonquadratic `alpha` without the
 M1-admissibility restrictions.  Its report preset scans all primes
 `p <= 1601` and all nonquadratic characters, finding `28` violations of the
@@ -1031,5 +1031,5 @@ pointwise genus-zero bound for `H(1/4)`.
 The finite verifier is
 
 ```bash
-python3 experimental/verify_m1_depth_two_equal_line_diagonal_reduction.py
+python3 experimental/scripts/verify_m1_depth_two_equal_line_diagonal_reduction.py
 ```

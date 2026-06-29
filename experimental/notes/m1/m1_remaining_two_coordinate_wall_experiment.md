@@ -23,7 +23,7 @@ other two active pairs are equivalent by the symmetry of
 The report data below was generated with
 
 ```bash
-python3 experimental/search_m1_remaining_two_coordinate_wall.py \
+python3 experimental/scripts/search_m1_remaining_two_coordinate_wall.py \
   --preset report --top 20
 ```
 
@@ -201,7 +201,7 @@ below while still respecting the projective Euler-characteristic target.
 The first reduction for this subfamily is recorded in
 `experimental/m1_depth_two_equal_line_diagonal_reduction.md`.
 The focused pullback-main scanner is
-`experimental/search_m1_equal_line_pullback.py`.
+`experimental/scripts/search_m1_equal_line_pullback.py`.
 
 For the current PR after the conditional projective equal-pair reduction, the
 next numerical stress test should focus on the nonresonant asymmetric wall

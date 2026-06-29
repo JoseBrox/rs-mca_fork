@@ -342,7 +342,7 @@ def build_result(args: argparse.Namespace) -> dict:
             "supports_examined": scanned_supports,
             "noncontained_supports": noncontained_supports,
             "support_limit": args.max_supports,
-            "script": "scripts/mca_slope_scan.py",
+            "script": "experimental/scripts/mca_slope_scan.py",
         },
     }
 

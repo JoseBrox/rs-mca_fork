@@ -20,4 +20,4 @@ and L1 verifiers import local helpers by module name, so scattering them into
 topic subdirectories would require a package rewrite without improving the
 research content.
 
-Locator-fiber packet tools live under `scripts/locator/`.
+Locator-fiber packet tools live under `experimental/scripts/locator/`.

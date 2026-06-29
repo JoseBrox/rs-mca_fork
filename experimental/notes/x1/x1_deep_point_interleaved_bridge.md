@@ -116,7 +116,7 @@ the global far condition is that `g_alpha` has no degree-`<k` explanation on any
 support of size `> k` (else `H(X)=(X-alpha)G(X)+1` would vanish at `> k` points
 yet `H(alpha)=1`). Reverse: multiply the support identity by `(x-alpha)`.
 
-**Independent reproduction.** `scripts/verify_x1_deep_point_identity.py`
+**Independent reproduction.** `experimental/scripts/verify_x1_deep_point_identity.py`
 re-derives the three sets from scratch in a model independent of the existing
 `f1_deep_point_list_to_ca_mca_sanity.py`:
 
@@ -253,7 +253,7 @@ inherits the saving.
 *Relation to the L2 `Quot_mu`.* The `Quot_mu` term of the sharp-constant
 conjecture is the aligned quotient-core count `L_mu(a,tau) = sum_{c=h}^{ell}
 binom(Q,c) E_empty(Q-c,ell-c,mu)` (`notes/l2/l2_interleaved_dilation_constants.md`
-§4; brute-validated in `scripts/verify_l2_quotient_core_count.py`), with diagonal
+§4; brute-validated in `experimental/scripts/verify_l2_quotient_core_count.py`), with diagonal
 endpoint `binom(Q,ell)` at `a=k+sigma`. This is the **combinatorial maximum** of
 the structured contribution -- the count of *all* `mu`-tuples of coset-union
 packets -- not a single word's list: it upper-bounds, and is generally not equal
@@ -561,33 +561,33 @@ identification with the `e`-fold interleaved bridge.
 ## 3. Plan (incremental commits on this PR)
 
 1. (done) Independent audit + broadened verifier of the base identity (§1).
-2. (done) Interleaved identity (§2) + `scripts/verify_x1_interleaved_deep_point.py`
+2. (done) Interleaved identity (§2) + `experimental/scripts/verify_x1_interleaved_deep_point.py`
    confirming `Bad_MCA^{int} = Deep_alpha^{mu}`, the list bound, and the
    `mu`-independent collision bound (§2.1).
 3. (done) Forward X1 count chain (§2.2) +
-   `scripts/verify_x1_forward_interleaved_count.py`: explicit
+   `experimental/scripts/verify_x1_forward_interleaved_count.py`: explicit
    `avg_lb <= BadVec_max <= L <= Cartesian`, with `L` constant in `mu`.
 4. (done) Worst-case interleaved list = base list in the a-regular regime
-   (§2.3) + `scripts/verify_x1_worst_case_interleaved.py`: interleaving exponent
+   (§2.3) + `experimental/scripts/verify_x1_worst_case_interleaved.py`: interleaving exponent
    exactly 1; the honest L2 -> L1 reduction.
 5. (done) Overlap-graph reduction (§2.4): interleaved (mu=2) = bipartite
    >=a-overlap edge count; tight => matching (=> §2.3); over-agreement => degree
-   >= 2 (a-regular hypothesis necessary). `scripts/verify_x1_overlap_graph.py`.
+   >= 2 (a-regular hypothesis necessary). `experimental/scripts/verify_x1_overlap_graph.py`.
 6. (done) K_{2,2} amplification witness (§2.5): `interleaved=4 > max row list=3`
    in the over-agreement regime, but below the base; `verify_x1_interleaving_amplification.py`.
 7. (done) §2.6: L2 -> L1 reduction (`Lst(Int) <= Lst(C_+)^mu`) + `K_{m,m}` clique
-   cap (`n>=k+m^2(a-k)`); `scripts/verify_x1_clique_cap.py`.
+   cap (`n>=k+m^2(a-k)`); `experimental/scripts/verify_x1_clique_cap.py`.
 8. (open) whether a NON-clique configuration pushes the worst-case exponent
    strictly above 1 while exceeding the base -- bounded by the L1 list (R), not
    from the clique family (C). This is now an L1-governed residual.
 9. (done) §2.7 line-decoding reading (M2): MCA = CA = line-decoding coincide on
-   the simple-pole family; `scripts/verify_x1_line_decoding.py`.
+   the simple-pole family; `experimental/scripts/verify_x1_line_decoding.py`.
 10. (done) §2.8 conditional protocol budget: an L1 bound `Lst(C_+)<=n^B` yields
-    the interleaved-MCA soundness budget; `scripts/verify_x1_conditional_budget.py`.
+    the interleaved-MCA soundness budget; `experimental/scripts/verify_x1_conditional_budget.py`.
 11. (done) §2.9 extension-line outlook: the F-line is the `M_z`-coupled slice of
     the `e`-fold interleaved bridge (connection to prob:F1).
 12. (done) §2.10 extension-line forward case realized over `F_{p^2}`:
-    `scripts/verify_x1_extension_line.py` (base identity, list control, M_z transfer).
+    `experimental/scripts/verify_x1_extension_line.py` (base identity, list control, M_z transfer).
 13. (done) Lean: `lean/rs_mca_formalization/RsMca/DeepPoint.lean` machine-checks
     the §2.6 clique-cap and §2.8 budget arithmetic (no `sorry`).
 

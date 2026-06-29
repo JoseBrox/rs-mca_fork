@@ -418,16 +418,16 @@ conditional ledger into the consumed certificate.
 The finite audit
 
 ```bash
-python3 experimental/verify_m1_depth_two_elementary_open_set_lemma.py
-python3 experimental/verify_m1_depth_two_quadratic_one_coordinate_lemma.py
-python3 experimental/verify_m1_depth_two_nonquadratic_one_coordinate_lemma.py
-python3 experimental/verify_m1_depth_two_reciprocal_two_coordinate_lemma.py
-python3 experimental/verify_m1_depth_two_infinity_unramified_two_coordinate_lemma.py
-python3 experimental/verify_m1_depth_two_equal_line_diagonal_reduction.py
-python3 experimental/verify_m1_depth_two_kummer_constant_audit.py
-python3 experimental/verify_m1_kummer_divisor_geometry.py
-python3 experimental/verify_m1_depth_two_two_coordinate_fiber_reduction.py
-python3 experimental/verify_m1_depth_two_two_coordinate_sharp_target.py
+python3 experimental/scripts/verify_m1_depth_two_elementary_open_set_lemma.py
+python3 experimental/scripts/verify_m1_depth_two_quadratic_one_coordinate_lemma.py
+python3 experimental/scripts/verify_m1_depth_two_nonquadratic_one_coordinate_lemma.py
+python3 experimental/scripts/verify_m1_depth_two_reciprocal_two_coordinate_lemma.py
+python3 experimental/scripts/verify_m1_depth_two_infinity_unramified_two_coordinate_lemma.py
+python3 experimental/scripts/verify_m1_depth_two_equal_line_diagonal_reduction.py
+python3 experimental/scripts/verify_m1_depth_two_kummer_constant_audit.py
+python3 experimental/scripts/verify_m1_kummer_divisor_geometry.py
+python3 experimental/scripts/verify_m1_depth_two_two_coordinate_fiber_reduction.py
+python3 experimental/scripts/verify_m1_depth_two_two_coordinate_sharp_target.py
 ```
 
 checks the finite geometry behind the elementary open-set correction and
@@ -494,7 +494,7 @@ normal-crossing line/conic arrangement over the algebraic closure.
 The finite verifier
 
 ```bash
-python3 experimental/verify_m1_kummer_divisor_geometry.py
+python3 experimental/scripts/verify_m1_kummer_divisor_geometry.py
 ```
 
 checks these line-line, line-conic, smoothness, and transversality identities

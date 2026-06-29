@@ -583,11 +583,11 @@ is `binom(n/d*, m/d*)` with `d* = ` smallest power of two `> sigma` dividing
 ## Reproducibility
 
 ```bash
-python3 experimental/verify_l1_prefix_divisor_count.py --self-check
-python3 experimental/verify_l1_prefix_divisor_count.py --p 17 --n 16 --k 4 --sigma 4
-python3 experimental/verify_l1_prefix_divisor_count.py --p 17 --n 16 --k 4 --sigma 4 --format json
+python3 experimental/scripts/verify_l1_prefix_divisor_count.py --self-check
+python3 experimental/scripts/verify_l1_prefix_divisor_count.py --p 17 --n 16 --k 4 --sigma 4
+python3 experimental/scripts/verify_l1_prefix_divisor_count.py --p 17 --n 16 --k 4 --sigma 4 --format json
 # non-enumerative DP, beyond brute force (§8):
-python3 experimental/verify_l1_prefix_divisor_count.py --dp-summary --p 257 --n 32 --k 2 --sigma 2
+python3 experimental/scripts/verify_l1_prefix_divisor_count.py --dp-summary --p 257 --n 32 --k 2 --sigma 2
 ```
 
 ## What to do next

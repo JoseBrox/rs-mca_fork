@@ -2,7 +2,7 @@
 
 **Status:** EXPERIMENTAL / AUDIT.
 
-This note accompanies `experimental/chebyshev_circle_fiber_verify.py`.  It
+This note accompanies `experimental/scripts/chebyshev_circle_fiber_verify.py`.  It
 checks the finite identities behind the Dickson--Chebyshev transfer in
 `tex/slackMCA_v3.tex`.
 
@@ -40,9 +40,9 @@ cases with `N >= 8` and `N/m >= 4`.
 Example commands:
 
 ```bash
-python3 experimental/chebyshev_circle_fiber_verify.py
-python3 experimental/chebyshev_circle_fiber_verify.py --case 32:4 --format json
-python3 experimental/chebyshev_circle_fiber_verify.py --prime 127
+python3 experimental/scripts/chebyshev_circle_fiber_verify.py
+python3 experimental/scripts/chebyshev_circle_fiber_verify.py --case 32:4 --format json
+python3 experimental/scripts/chebyshev_circle_fiber_verify.py --prime 127
 ```
 
 This is not a new asymptotic theorem.  It is a reproducible finite audit of the

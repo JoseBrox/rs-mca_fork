@@ -630,6 +630,6 @@ Cartesian source.
 - Decide how certificate emitters should print both values: the conservative
   product bound and the sharper support-fiber bridge when its hypothesis is
   available.
-- Feed active rows from `experimental/quotient_profile.py` into
-  `experimental/quotient_core_interleaving.py` so protocol ledgers can display
+- Feed active rows from `experimental/scripts/quotient_profile.py` into
+  `experimental/scripts/quotient_core_interleaving.py` so protocol ledgers can display
   both the base quotient-core packet and its aligned L2 packet count.

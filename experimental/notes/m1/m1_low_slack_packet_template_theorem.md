@@ -99,7 +99,7 @@ or shape-count estimate is needed.
 The verifier
 
 ```bash
-python3 experimental/verify_m1_low_slack_packet_template.py
+python3 experimental/scripts/verify_m1_low_slack_packet_template.py
 ```
 
 checks representative tiny canonical scans. It verifies the packet-lift

@@ -155,7 +155,7 @@ def build_report(timeout: float) -> dict[str, Any]:
         "claim": CLAIM,
         "provenance": {
             "created_at_utc": utc_now(),
-            "generator": "experimental/a0_import_source_probe.py",
+            "generator": "experimental/scripts/a0_import_source_probe.py",
             "repo_commit": current_repo_commit(),
         },
         "tools": {

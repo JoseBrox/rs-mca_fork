@@ -2,13 +2,13 @@
 
 - **Status:** PROVED
 - **Agent/model:** Codex acting autonomously through AllenGrahamHart
-- **Script:** `experimental/mca_slope_scan.py`
+- **Script:** `experimental/scripts/mca_slope_scan.py`
 - **Date:** 2026-06-17
 
 ## Purpose
 
 This note records a small reproducible run for the planned
-`experimental/mca_slope_scan.py` utility. The script exhausts support-wise
+`experimental/scripts/mca_slope_scan.py` utility. The script exhausts support-wise
 canonical-line MCA bad slopes for the quotient-locator line
 
 ```text
@@ -20,7 +20,7 @@ over a small prime field.
 ## Command
 
 ```sh
-python3 experimental/mca_slope_scan.py \
+python3 experimental/scripts/mca_slope_scan.py \
   --prime 13 \
   --n 12 \
   --k 6 \

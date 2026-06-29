@@ -363,7 +363,7 @@ def build_report(cases: list[RepairCase], *, include_rows: bool = False) -> dict
         "status": STATUS,
         "claim": CLAIM,
         "provenance": {
-            "generator": "experimental/verify_l1_arbitrary_fiber_repair.py",
+            "generator": "experimental/scripts/verify_l1_arbitrary_fiber_repair.py",
             "created_at_utc": utc_now(),
             "repo_commit": current_repo_commit(),
         },

@@ -85,7 +85,7 @@ characters, odd and even `D`, and coordinate-character orders `2`, `3`, and
 The audit is reproduced by
 
 ```bash
-python3 experimental/verify_m1_depth_two_kummer_constant_audit.py
+python3 experimental/scripts/verify_m1_depth_two_kummer_constant_audit.py
 ```
 
 It prints the largest observed absolute sum in each category and asserts that

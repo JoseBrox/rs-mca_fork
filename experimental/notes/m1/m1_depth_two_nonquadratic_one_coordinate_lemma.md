@@ -110,7 +110,7 @@ d!=0, three coordinates active:  16p
 The finite verifier
 
 ```bash
-python3 experimental/verify_m1_depth_two_nonquadratic_one_coordinate_lemma.py
+python3 experimental/scripts/verify_m1_depth_two_nonquadratic_one_coordinate_lemma.py
 ```
 
 checks the exact fixed-coordinate identity, the Jacobi/discriminant factor

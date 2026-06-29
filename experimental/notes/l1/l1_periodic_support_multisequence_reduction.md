@@ -287,7 +287,7 @@ This note does not prove that count.
 ## Companion Verifier
 
 The script
-`experimental/verify_l1_periodic_support_multisequence_reduction.py` checks
+`experimental/scripts/verify_l1_periodic_support_multisequence_reduction.py` checks
 tiny cyclic prime-field cases for:
 
 1. support invariance iff the locator lies in \(T^d\);

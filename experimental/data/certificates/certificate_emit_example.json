@@ -14,7 +14,7 @@
   },
   "proof_certificate": {
     "method": "deterministic tiny example for certificate_emit.py",
-    "script": "scripts/certificate_emit.py",
+    "script": "experimental/scripts/certificate_emit.py",
     "seed": "none"
   },
   "result": {
@@ -23,7 +23,7 @@
     "mca_bad_slope_count": 13,
     "mca_density": "1"
   },
-  "source": "experimental/certificate_emit_example.json",
+  "source": "experimental/data/certificates/certificate_emit_example.json",
   "status": "PROVED",
   "theorem_or_problem": "agents.md script output standard",
   "title": "Certificate Emitter Example"

@@ -4053,5 +4053,5 @@ but at the two degenerate values `x=1,-2` the actual count differs by
 The finite verifier is
 
 ```bash
-python3 experimental/verify_m1_depth_two_line_conic_resonance_reduction.py
+python3 experimental/scripts/verify_m1_depth_two_line_conic_resonance_reduction.py
 ```

@@ -2,7 +2,7 @@
 
 **Status:** EXPERIMENTAL / AUDIT.
 
-This note accompanies `experimental/f1_extension_slope_sweep.py`.  It records a
+This note accompanies `experimental/scripts/f1_extension_slope_sweep.py`.  It records a
 small exact experiment for the F1 problem in `agents.md`: whether extension
 valued residue denominators can create bad slopes that are invisible to a
 base-field-only MCA search.

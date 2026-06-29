@@ -25,7 +25,7 @@ fallback import.
 The source-access status is reproducible with:
 
 ```sh
-python3 experimental/a0_import_source_probe.py \
+python3 experimental/scripts/a0_import_source_probe.py \
   --json-out /private/tmp/rs-mca-a0-source-probe.json
 ```
 

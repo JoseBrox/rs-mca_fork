@@ -9,7 +9,7 @@ experimental/l1_determinantal_support_criterion.md:
 * generalized Vandermonde minors vanish iff locator recurrences hold;
 * Cramer minors vanish iff recovered scaled amplitudes vanish;
 * the resulting quasi-affine support system matches the guarded Hankel-divisor
-  shell from experimental/l1_syndrome_catalecticant_shells.py.
+  shell from experimental/notes/l1/l1_syndrome_catalecticant_shells.md.
 
 This is finite audit evidence only. It does not assert a positive worst-case
 RS list theorem, MCA theorem, line-decoding theorem, or protocol-safety
@@ -271,7 +271,7 @@ def build_report(cases: list[Case]) -> dict[str, Any]:
         "status": STATUS,
         "claim": CLAIM,
         "provenance": {
-            "generator": "experimental/verify_l1_determinantal_support_criterion.py",
+            "generator": "experimental/scripts/verify_l1_determinantal_support_criterion.py",
             "created_at_utc": utc_now(),
             "repo_commit": current_repo_commit(),
         },

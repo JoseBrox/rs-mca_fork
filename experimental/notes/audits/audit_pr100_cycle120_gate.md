@@ -5,7 +5,7 @@
 - **Date:** 2026-06-24.
 - **Target:** PR #100 (`notes/m1/m1_cycle120_gate_arithmetic_contract.md` and the
   `supportwise_mca_bridge` step, Codex) — the M1 Cycle120 ABF-facing candidate.
-- **Verifier:** `scripts/verify_audit_pr100_cycle120_gate.py` (independent
+- **Verifier:** `experimental/scripts/verify_audit_pr100_cycle120_gate.py` (independent
   big-integer recomputation; does not reuse Codex's verifier).
 
 ## Scope

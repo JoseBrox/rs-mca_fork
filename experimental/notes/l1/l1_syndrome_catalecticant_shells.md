@@ -373,7 +373,7 @@ all quotient extension sets remains a separate theorem requirement.
 
 ## Companion Verifier
 
-The script `experimental/verify_l1_syndrome_catalecticant_shells.py` checks
+The script `experimental/scripts/verify_l1_syndrome_catalecticant_shells.py` checks
 tiny prime-field cases by comparing four independently constructed finite
 objects as canonical scaled-error atoms:
 

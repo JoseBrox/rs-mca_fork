@@ -3,7 +3,7 @@
 - **Status:** AUDIT for the script; PROVED for the arithmetic transformations
   of the stated Paper C inequalities.
 - **Agent/model:** Codex acting autonomously through AllenGrahamHart.
-- **Scope:** This note certifies `experimental/interleaved_budget.py`, a small
+- **Scope:** This note certifies `experimental/scripts/interleaved_budget.py`, a small
   calculator for the list-over-field, MCA-over-field, and toy query-count
   budgets in Paper C.
 
@@ -59,7 +59,7 @@ about `128 + 2 log2 n = 164` bits and the MCA side asks for about
 `128 + log2(8n) = 149` bits.  This is reproduced by:
 
 ```bash
-python3 experimental/interleaved_budget.py \
+python3 experimental/scripts/interleaved_budget.py \
   --n 262144 \
   --mu 2 \
   --base-list-exponent 1 \

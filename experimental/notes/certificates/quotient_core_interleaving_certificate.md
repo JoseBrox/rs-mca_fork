@@ -3,7 +3,7 @@
 - **Status:** PROVED for the closed-form quotient-core packet count.
 - **Agent/model:** Codex acting autonomously through AllenGrahamHart.
 - **Scope:** This note certifies
-  `experimental/quotient_core_interleaving.py`, a deterministic calculator for
+  `experimental/scripts/quotient_core_interleaving.py`, a deterministic calculator for
   the aligned L2 contribution of the quotient-core support packet.
 
 ## Claim Audited
@@ -73,7 +73,7 @@ common quotient coset is required.
 Tiny dyadic quotient packet:
 
 ```bash
-python3 experimental/quotient_core_interleaving.py \
+python3 experimental/scripts/quotient_core_interleaving.py \
   --n 8 \
   --k 4 \
   --sigma 1 \
@@ -84,7 +84,7 @@ python3 experimental/quotient_core_interleaving.py \
 The same parameters with disjoint row slack sets:
 
 ```bash
-python3 experimental/quotient_core_interleaving.py \
+python3 experimental/scripts/quotient_core_interleaving.py \
   --n 8 \
   --k 4 \
   --sigma 1 \
@@ -96,7 +96,7 @@ python3 experimental/quotient_core_interleaving.py \
 One step below the exact quotient-core threshold:
 
 ```bash
-python3 experimental/quotient_core_interleaving.py \
+python3 experimental/scripts/quotient_core_interleaving.py \
   --n 8 \
   --k 4 \
   --sigma 1 \
@@ -108,7 +108,7 @@ python3 experimental/quotient_core_interleaving.py \
 JSON mode is intended for later connection to the quotient-profile scanner:
 
 ```bash
-python3 experimental/quotient_core_interleaving.py \
+python3 experimental/scripts/quotient_core_interleaving.py \
   --n 1048576 \
   --k 524288 \
   --sigma 1 \

@@ -222,6 +222,12 @@ Good first contributions include:
 
 See `AGENTS.md` for a prioritized task list and suggested toy cases.
 
+Several early "good first" artifacts now exist under `experimental/`: quotient
+profile and dither scanners, entropy-margin and restricted-sum certificates,
+the theorem-label map, the q=17 locator/MCA certificate, the reserve-certificate
+schema, and a Lean starter. Treat those as audit and extension targets, not as
+missing first implementations.
+
 ## Script layer
 
 The first heuristic script is `scripts/run_frontier.py`, an **EXPERIMENTAL** Paper B frontier scanner. For each prime `p` passed on the command line, intended with `32 | p-1`, it builds the order-32 multiplicative subgroup of `F_p`, uses a meet-in-the-middle subset enumeration at fixed `l = 18`, and records which elementary-symmetric fingerprints `(e1, e2)` are realized by `l` subgroup elements. Its coverage line measures how much of `F_p^2` this restricted quotient-locator map hits and appends the result to `frontier_results.txt`; full coverage is evidence about quotient/restricted-sum frontier behavior, not a proof by itself. The script currently requires `numpy` and `sympy`.
@@ -237,20 +243,17 @@ local limits, aperiodic Hankel-pencil packing, or deployed protocol soundness.
 The broader intended script layer is:
 
 ```text
-scripts/
-  run_frontier.py            # EXPERIMENTAL psi_2 restricted-subset frontier scan
-  entropy_margin.py          # generated-field entropy reserve
-  quotient_profile.py        # active quotient scales at actual (n, k, a)
-  restricted_sum_dp.py       # restricted-sum / DSH verification certificates
-  locator_fiber_scan.py      # small-field locator-fiber experiments
-  mca_slope_scan.py          # small-field bad-slope / residue-line experiments
-  interleaved_budget.py      # base/interleaved list-to-field soundness budget
-  certificate_emit.py        # JSON + TeX certificate tables for Paper C
-
-experimental/notes/certificate_scanner/
-  certificate_scanner.py     # EXPERIMENTAL A/B/C/D + high-agreement ledger scanner
-  examples/*.json            # reproducible row configs
-  outputs/*.report.{json,md} # replayable scanner outputs
+scripts/run_frontier.py                                      # EXPERIMENTAL psi_2 restricted-subset frontier scan
+experimental/scripts/entropy_margin.py                      # generated-field entropy reserve
+experimental/scripts/quotient_profile.py                    # active quotient scales at actual (n, k, a)
+experimental/scripts/quotient_profile_dither.py             # quotient-profile dither scanner
+experimental/scripts/restricted_sum_dp.py                   # restricted-sum / DSH verification certificates
+experimental/scripts/locator/locator_fiber_sweep/run_locator_fiber_sweep.py  # small-field locator-fiber experiments
+experimental/scripts/mca_slope_scan.py                      # small-field bad-slope / residue-line experiments
+experimental/scripts/f1_extension_slope_sweep.py            # extension-line bad-slope toy sweeps
+experimental/scripts/interleaved_budget.py                  # base/interleaved list-to-field soundness budget
+experimental/scripts/certificate_emit.py                    # JSON + TeX certificate tables for Paper C
+experimental/notes/certificate_scanner/certificate_scanner.py  # EXPERIMENTAL A/B/C/D + high-agreement ledger scanner
 ```
 
 A useful script should emit both human-readable output and a machine-checkable certificate. Hand-computed tables should eventually be replaced by script output.

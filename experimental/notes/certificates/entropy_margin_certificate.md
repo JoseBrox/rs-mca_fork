@@ -5,7 +5,7 @@ Scripted parameter runs are `AUDIT`, not theorem upgrades.
 
 **Target:** Generated-field entropy ledger for Paper C reserve certificates.
 
-**Companion script:** `experimental/entropy_margin.py`
+**Companion script:** `experimental/scripts/entropy_margin.py`
 
 ## Claim
 
@@ -148,19 +148,19 @@ challenge field is accidentally used in place of `q_gen`.
 Example:
 
 ```bash
-python3 experimental/entropy_margin.py --n 16 --k 8 --sigma 1 --q-gen 17
+python3 experimental/scripts/entropy_margin.py --n 16 --k 8 --sigma 1 --q-gen 17
 ```
 
 JSON output:
 
 ```bash
-python3 experimental/entropy_margin.py --n 16 --k 8 --sigma 1 --q-gen 17 --format json
+python3 experimental/scripts/entropy_margin.py --n 16 --k 8 --sigma 1 --q-gen 17 --format json
 ```
 
 KoalaBear-class bit-width audit:
 
 ```bash
-python3 experimental/entropy_margin.py --n 2097152 --k 1048576 --sigma 131072 --q-gen-log2 31
+python3 experimental/scripts/entropy_margin.py --n 2097152 --k 1048576 --sigma 131072 --q-gen-log2 31
 ```
 
 Every run is an `AUDIT` result. Passing this certificate means only that the

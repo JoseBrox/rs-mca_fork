@@ -8,7 +8,7 @@
   Codex) — the general fixed-slack `σ≥1` extension-line family. This completes
   the gap left open by [`audit_pr103_f1_sigma_one.md`](audit_pr103_f1_sigma_one.md)
   (which verified σ=1 and flagged σ≥2/slow-slack as "not separately brute-checked").
-- **Verifier:** `scripts/verify_audit_pr103_f1_sigma_two.py`.
+- **Verifier:** `experimental/scripts/verify_audit_pr103_f1_sigma_two.py`.
 
 ## Claim audited
 

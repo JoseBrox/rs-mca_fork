@@ -2,8 +2,9 @@
 """Compare the README script-layer manifest with the actual scripts.
 
 Proof status: AUDIT. This deterministic scanner parses the intended
-`scripts/` block in `readme.md` and reports which planned scripts currently
-exist in the repository. It does not modify the script layer.
+script-layer block in the repository root `readme.md` and reports which
+planned scripts currently exist in the repository. It does not modify the
+script layer.
 """
 
 from __future__ import annotations
@@ -17,9 +18,9 @@ from pathlib import Path
 from typing import Any
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 README_PATH = REPO_ROOT / "readme.md"
-SCRIPTS_DIR = REPO_ROOT / "scripts"
+SCRIPT_GLOBS = ("scripts/*.py", "experimental/scripts/*.py")
 
 THEOREM_PROBLEM_ID = "readme-script-layer-manifest-inventory"
 PROOF_STATUS = "AUDIT"
@@ -27,7 +28,7 @@ DETERMINISM = "deterministic source scan; no random seed"
 
 MANIFEST_INTRO = "The broader intended script layer is:"
 SCRIPT_LINE_RE = re.compile(
-    r"^\s*(?P<name>[A-Za-z0-9_.-]+\.py)\s*#\s*(?P<description>.+?)\s*$"
+    r"^\s*(?P<path>[A-Za-z0-9_./-]+\.py)\s*#\s*(?P<description>.+?)\s*$"
 )
 STATUS_WORDS = (
     "PROVED",
@@ -103,7 +104,7 @@ def parse_manifest_entries(block_lines: list[str]) -> list[tuple[str, str]]:
             continue
         entries.append(
             (
-                f"scripts/{match.group('name')}",
+                match.group("path"),
                 match.group("description"),
             )
         )
@@ -111,12 +112,11 @@ def parse_manifest_entries(block_lines: list[str]) -> list[tuple[str, str]]:
 
 
 def actual_scripts() -> dict[str, Path]:
-    if not SCRIPTS_DIR.exists():
-        return {}
-    return {
-        relative(path): path
-        for path in sorted(SCRIPTS_DIR.glob("*.py"))
-    }
+    scripts: dict[str, Path] = {}
+    for pattern in SCRIPT_GLOBS:
+        for path in sorted(REPO_ROOT.glob(pattern)):
+            scripts[relative(path)] = path
+    return scripts
 
 
 def build_report() -> dict[str, Any]:
@@ -128,6 +128,10 @@ def build_report() -> dict[str, Any]:
     manifest_entries: list[ManifestEntry] = []
     for path, description in manifest_pairs:
         actual_path = actual.get(path)
+        if actual_path is None:
+            candidate = REPO_ROOT / path
+            if candidate.exists():
+                actual_path = candidate
         manifest_entries.append(
             ManifestEntry(
                 path=path,
@@ -166,7 +170,7 @@ def build_report() -> dict[str, Any]:
             "determinism": DETERMINISM,
             "readme": relative(README_PATH),
             "manifest_marker": MANIFEST_INTRO,
-            "scripts_glob": "scripts/*.py",
+            "scripts_glob": list(SCRIPT_GLOBS),
         },
         "result": {
             "audit_result": audit_result,
@@ -199,7 +203,7 @@ def format_text(report: dict[str, Any]) -> str:
         f"determinism: {metadata['determinism']}",
         f"readme: {metadata['readme']}",
         f"manifest_marker: {metadata['manifest_marker']}",
-        f"scripts_glob: {metadata['scripts_glob']}",
+        f"scripts_glob: {', '.join(metadata['scripts_glob'])}",
         f"audit_result: {result['audit_result']}",
         f"manifest_entries: {result['manifest_entries']}",
         f"actual_scripts: {result['actual_scripts']}",

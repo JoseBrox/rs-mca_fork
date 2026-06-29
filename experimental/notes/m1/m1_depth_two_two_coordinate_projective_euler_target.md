@@ -151,7 +151,7 @@ quadratic-fiber trace family, with candidate singular support contained in
 The finite verifier
 
 ```bash
-python3 experimental/verify_m1_kummer_divisor_geometry.py
+python3 experimental/scripts/verify_m1_kummer_divisor_geometry.py
 ```
 
 checks the projective line/conic incidence and the two-coordinate Euler

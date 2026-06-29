@@ -113,7 +113,7 @@ sharp for the remaining ramified nonreciprocal family.
 ## Remaining-Wall Stress Scan
 
 The targeted scanner
-`experimental/search_m1_remaining_two_coordinate_wall.py` tests only the
+`experimental/scripts/search_m1_remaining_two_coordinate_wall.py` tests only the
 ramified nonreciprocal class left after the proved slice reductions. Its
 report preset exhausts all canonical active-pair remaining-wall tuples with
 `p <= 500` and `e <= 24`, then scans the diagonal `n=20` family up to
@@ -159,5 +159,5 @@ terms can be collapsed to `4p`.
 The verifier is
 
 ```bash
-python3 experimental/verify_m1_depth_two_two_coordinate_sharp_target.py
+python3 experimental/scripts/verify_m1_depth_two_two_coordinate_sharp_target.py
 ```

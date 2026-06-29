@@ -2,7 +2,7 @@
 
 **Status:** EXPERIMENTAL / AUDIT, with a proved finite lower-bound predicate.
 
-This note accompanies `experimental/domain_shatter_quotient_scan.py`.  It
+This note accompanies `experimental/scripts/domain_shatter_quotient_scan.py`.  It
 targets the X3 direction in `agents.md`: treat the quotient profile as a
 degeneracy measure and test whether small changes to a smooth domain destroy
 the quotient-core obstruction while preserving much of the domain.
@@ -66,9 +66,9 @@ scales to be checked rather than assumed safe.
 Example commands:
 
 ```bash
-python3 experimental/domain_shatter_quotient_scan.py --m-min 8 --m-max 10
-python3 experimental/domain_shatter_quotient_scan.py --pattern none --pattern hit-cosets:16
-python3 experimental/domain_shatter_quotient_scan.py --dimension-source retained --format json
+python3 experimental/scripts/domain_shatter_quotient_scan.py --m-min 8 --m-max 10
+python3 experimental/scripts/domain_shatter_quotient_scan.py --pattern none --pattern hit-cosets:16
+python3 experimental/scripts/domain_shatter_quotient_scan.py --dimension-source retained --format json
 ```
 
 This is not a positive theorem for punctured domains.  It is an obstruction

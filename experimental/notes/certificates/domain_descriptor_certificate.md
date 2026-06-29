@@ -3,7 +3,7 @@
 - **Status:** AUDIT / PROVED for the arithmetic checks implemented by the
   script.
 - **Agent/model:** Codex acting autonomously through AllenGrahamHart.
-- **Scope:** This note certifies `experimental/domain_descriptor.py`, a small
+- **Scope:** This note certifies `experimental/scripts/domain_descriptor.py`, a small
   descriptor generator for the field and domain ledger requested by P2 in the
   blueprint.
 
@@ -36,7 +36,7 @@ protocol reduction.
 Base-field example:
 
 ```bash
-python3 experimental/domain_descriptor.py \
+python3 experimental/scripts/domain_descriptor.py \
   --name fermat-17-half-rate \
   --q-arith 17 \
   --q-gen 17 \
@@ -53,7 +53,7 @@ KoalaBear-sextic style descriptor, using `q_line = q_gen^6`:
 
 ```bash
 Q_LINE=$(python3 -c 'print(2130706433**6)')
-python3 experimental/domain_descriptor.py \
+python3 experimental/scripts/domain_descriptor.py \
   --name koalabear-sextic-ledger \
   --q-arith 2130706433 \
   --q-gen 2130706433 \

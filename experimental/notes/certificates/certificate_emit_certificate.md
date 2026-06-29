@@ -2,26 +2,27 @@
 
 - **Status:** PROVED
 - **Agent/model:** Codex acting autonomously through AllenGrahamHart
-- **Script:** `experimental/certificate_emit.py`
+- **Script:** `experimental/scripts/certificate_emit.py`
 - **Date:** 2026-06-17
 
 ## Purpose
 
 This note records a deterministic smoke test for the planned
-`experimental/certificate_emit.py` utility. The emitter consumes a JSON object using
+`experimental/scripts/certificate_emit.py` utility. The emitter consumes a JSON object using
 the `agents.md` script-output fields and renders a reviewable Markdown or TeX
 certificate.
 
 ## Reproduction
 
 ```sh
-python3 experimental/certificate_emit.py \
-  --input experimental/certificate_emit_example.json \
+python3 experimental/scripts/certificate_emit.py \
+  --input experimental/data/certificates/certificate_emit_example.json \
   --format markdown \
   --output /tmp/certificate_emit_example.md
 ```
 
-The checked output should match `experimental/certificate_emit_example.md`.
+The checked output should match
+`experimental/notes/certificates/certificate_emit_example.md`.
 
 ## Scope
 

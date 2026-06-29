@@ -1860,7 +1860,7 @@ cross-histogram formula also gives the exact union ledger for any chosen set of
 content classes. The command
 
 ```bash
-python3 experimental/m1_occupancy_profile_scan.py \
+python3 experimental/scripts/m1_occupancy_profile_scan.py \
   --quotient-order 4 --fiber-size 3 --support-size 4 --slack 3 \
   --line-field-size 17
 ```
@@ -1869,7 +1869,7 @@ is the current experimental hook for this complete histogram-level report. For
 dimension dithering across more than one target slack, the scanner should also
 emit `L_win(r)` for each allowed dither and rank the surviving dyadic
 first-exchange ledger terms.  The command
-`python3 experimental/quotient_profile_dither.py --slack-window 1:16` is the
+`python3 experimental/scripts/quotient_profile_dither.py --slack-window 1:16` is the
 current experimental hook for this finite-window report; it also evaluates the
 one-remainder strict codegree mass from `H_REM` for each nonzero support
 remainder in the window. Supplying `--line-field-size q` additionally reports

@@ -2,13 +2,13 @@
 
 **Status:** AUDIT / EXPERIMENTAL.
 
-This note accompanies `experimental/m1_support_occupancy_scan.py`. It combines
+This note accompanies `experimental/scripts/m1_support_occupancy_scan.py`. It combines
 two proved experimental notes:
 
-- `experimental/m1_support_coefficient_test.md`: a support `S` contributes a
+- `experimental/notes/m1/m1_support_coefficient_test.md`: a support `S` contributes a
   bad slope exactly when `Pi_S(f)` and `Pi_S(g)` are collinear and not both
   zero;
-- `experimental/m1_quotient_periodic_overlap_profile.md`: exact supports
+- `experimental/notes/m1/m1_quotient_periodic_overlap_profile.md`: exact supports
   decompose into quotient-fiber occupancy classes with closed support counts
   and exchange ledgers.
 
@@ -20,7 +20,7 @@ labels the support by its quotient-fiber occupancy histogram.
 Example:
 
 ```bash
-python3 experimental/m1_support_occupancy_scan.py \
+python3 experimental/scripts/m1_support_occupancy_scan.py \
   --prime 17 --n 8 --k 4 --slack 2 --quotient-order 4
 ```
 
@@ -1033,12 +1033,12 @@ When `D=F_p^*`, the
 frontier saturation certificate: for `p>=11`, the values
 `-(u^2+v^2+uv+u+v+1)` hit both quadratic classes on admissible shapes, so
 the nonzero depth-two slope image is all of `F_p^*`. The analytic proof covers
-`p>=23`; `experimental/verify_m1_slack_two_depth_two_full_domain.py` checks
+`p>=23`; `experimental/scripts/verify_m1_slack_two_depth_two_full_domain.py` checks
 `p=11,13,17,19` and records the tiny failures `p=5,7`.
 The companion verifier
 
 ```bash
-python3 experimental/verify_m1_slack_two_depth_two_kummer_saturation.py
+python3 experimental/scripts/verify_m1_slack_two_depth_two_kummer_saturation.py
 ```
 
 checks two index-two proper-subgroup cases where this low-index certificate is
@@ -1145,7 +1145,7 @@ to `p>=103`; the only unsaturated primes below the analytic threshold are
 Run
 
 ```bash
-python3 experimental/verify_m1_slack_three_full_domain_audit.py
+python3 experimental/scripts/verify_m1_slack_three_full_domain_audit.py
 ```
 
 to reproduce this finite range check without enumerating full support
@@ -1208,14 +1208,14 @@ unsaturated primes in that finite range are
 Run
 
 ```bash
-python3 experimental/verify_m1_slack_three_qr_index_two_audit.py
+python3 experimental/scripts/verify_m1_slack_three_qr_index_two_audit.py
 ```
 
 to reproduce this finite audit.
 The broader split-cubic sample verifier remains
 
 ```bash
-python3 experimental/verify_m1_slack_three_cube_coset_coverage.py
+python3 experimental/scripts/verify_m1_slack_three_cube_coset_coverage.py
 ```
 
 for a split-cubic exact audit of one proper-subgroup sample where this

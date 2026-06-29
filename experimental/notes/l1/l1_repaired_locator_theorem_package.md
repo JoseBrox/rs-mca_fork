@@ -940,7 +940,7 @@ It should be read together with:
 - `experimental/l1_arbitrary_fiber_repair.md`
 - `experimental/l1_arbitrary_fiber_repair_tex_patch.md`
 - `experimental/l1_arbitrary_fiber_repair_checkpoint.md`
-- `experimental/verify_l1_arbitrary_fiber_repair.py`
+- `experimental/scripts/verify_l1_arbitrary_fiber_repair.py`
 
 ## Theorem / Counterexample Ledger
 

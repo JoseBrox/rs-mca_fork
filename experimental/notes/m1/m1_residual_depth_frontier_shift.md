@@ -205,7 +205,7 @@ residual-depth hierarchy.
 The dedicated verifier
 
 ```bash
-python3 experimental/verify_m1_residual_depth_frontier_shift.py
+python3 experimental/scripts/verify_m1_residual_depth_frontier_shift.py
 ```
 
 checks the first concrete shift using the scanner's second-superboundary and
@@ -216,7 +216,7 @@ both active and inactive quotient-lift gates.
 The ladder audit
 
 ```bash
-python3 experimental/verify_m1_residual_depth_ladder.py
+python3 experimental/scripts/verify_m1_residual_depth_ladder.py
 ```
 
 enumerates normalized residual packets for several small fixed packet sizes and

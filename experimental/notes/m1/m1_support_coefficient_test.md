@@ -1310,7 +1310,7 @@ with `w=-1-u-v` lie in the union of nine affine lines, containing at most
 remain after the cuts. The remaining primes `p=11,13,17,19` are checked by
 
 ```bash
-python3 experimental/verify_m1_slack_two_depth_two_full_domain.py
+python3 experimental/scripts/verify_m1_slack_two_depth_two_full_domain.py
 ```
 
 The same finite check records the sharp tiny failures: at `p=5` the
@@ -1688,7 +1688,7 @@ nonzero field slope for every prime `p==1 mod 3` with `p>=103`.
 This finite audit is reproduced by
 
 ```bash
-python3 experimental/verify_m1_slack_three_full_domain_audit.py
+python3 experimental/scripts/verify_m1_slack_three_full_domain_audit.py
 ```
 
 There is also a prime-field character-sum route for the slack-three conic
@@ -1880,13 +1880,13 @@ large-prime character-sum estimate for the range `p>=38026`.
 The finite audit is reproduced by
 
 ```bash
-python3 experimental/verify_m1_slack_three_qr_index_two_audit.py
+python3 experimental/scripts/verify_m1_slack_three_qr_index_two_audit.py
 ```
 
 The split-cubic exact audit
 
 ```bash
-python3 experimental/verify_m1_slack_three_cube_coset_coverage.py
+python3 experimental/scripts/verify_m1_slack_three_cube_coset_coverage.py
 ```
 
 checks this certificate on an index-two proper subgroup at `p=38039`,
@@ -2019,12 +2019,12 @@ leading size `p^2/(24 gcd(3,n) e^4)`.
 
 ## Suggested Next Step
 
-The script `experimental/m1_support_occupancy_scan.py` is the current small M1
+The script `experimental/scripts/m1_support_occupancy_scan.py` is the current small M1
 scanner around `Pi_S` and quotient-fiber occupancy. It can be run, for example,
 as
 
 ```bash
-python3 experimental/m1_support_occupancy_scan.py \
+python3 experimental/scripts/m1_support_occupancy_scan.py \
   --prime 17 --n 8 --k 4 --slack 2 --quotient-order 4
 ```
 

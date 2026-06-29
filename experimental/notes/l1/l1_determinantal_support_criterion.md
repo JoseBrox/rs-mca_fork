@@ -348,13 +348,13 @@ as a complete arbitrary-word upper bound.
 
 ## Companion Verifier
 
-The script `experimental/verify_l1_determinantal_support_criterion.py` checks
+The script `experimental/scripts/verify_l1_determinantal_support_criterion.py` checks
 tiny prime-field cases by comparing:
 
 1. generalized Vandermonde minor vanishing;
 2. locator recurrence vanishing;
 3. Cramer-minor nonvanishing;
 4. the guarded Hankel-divisor shell from
-   `experimental/verify_l1_syndrome_catalecticant_shells.py`.
+   `experimental/scripts/verify_l1_syndrome_catalecticant_shells.py`.
 
 The verifier is EXPERIMENTAL / AUDIT evidence only.

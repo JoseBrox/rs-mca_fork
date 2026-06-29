@@ -95,7 +95,7 @@ prime `p>=103` with `p==1 mod 3`, and contains zero exactly when
 The finite audit is reproduced by
 
 ```bash
-python3 experimental/verify_m1_slack_three_full_domain_audit.py
+python3 experimental/scripts/verify_m1_slack_three_full_domain_audit.py
 ```
 
 ## Proper-Subgroup Certificates
@@ -132,7 +132,7 @@ isolated in
 reproduced by
 
 ```bash
-python3 experimental/verify_m1_slack_three_genus_zero_kummer_lemma.py
+python3 experimental/scripts/verify_m1_slack_three_genus_zero_kummer_lemma.py
 ```
 
 For fixed `M`, let `P_M=(s_M-1)^2+1`, where `s_M` is the least positive
@@ -152,8 +152,8 @@ nonzero `D^3` cosets, using the genus-zero Kummer lemma in the range
 The proper-subgroup audits are reproduced by
 
 ```bash
-python3 experimental/verify_m1_slack_three_cube_coset_coverage.py
-python3 experimental/verify_m1_slack_three_qr_index_two_audit.py
+python3 experimental/scripts/verify_m1_slack_three_cube_coset_coverage.py
+python3 experimental/scripts/verify_m1_slack_three_qr_index_two_audit.py
 ```
 
 ## Contribution to M1

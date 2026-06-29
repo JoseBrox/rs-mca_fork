@@ -166,7 +166,7 @@ with no reciprocal pair among the three projective line monodromies.
 The finite verifier
 
 ```bash
-python3 experimental/verify_m1_depth_two_two_coordinate_fiber_reduction.py
+python3 experimental/scripts/verify_m1_depth_two_two_coordinate_fiber_reduction.py
 ```
 
 checks the exact decomposition for every two-coordinate tuple in the

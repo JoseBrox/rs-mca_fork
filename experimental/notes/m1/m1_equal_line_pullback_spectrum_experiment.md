@@ -93,14 +93,14 @@ can only arise in very small equal-line domains.
 The report data below was generated with
 
 ```bash
-python3 experimental/search_m1_equal_line_pullback_spectrum.py \
+python3 experimental/scripts/search_m1_equal_line_pullback_spectrum.py \
   --preset report --top 12
 ```
 
 The compatibility check against the old tuple-scan range was generated with
 
 ```bash
-python3 experimental/search_m1_equal_line_pullback_spectrum.py \
+python3 experimental/scripts/search_m1_equal_line_pullback_spectrum.py \
   --preset report --prime-limit 500 --m1-max-character-order 24 --top 8
 ```
 
@@ -161,7 +161,7 @@ An extended run to `p <= 3000` keeps the same qualitative picture but shows
 that a literal exact `3p` bound is still too rigid:
 
 ```bash
-python3 experimental/search_m1_equal_line_pullback_spectrum.py \
+python3 experimental/scripts/search_m1_equal_line_pullback_spectrum.py \
   --preset report --prime-limit 3000 --top 12
 ```
 

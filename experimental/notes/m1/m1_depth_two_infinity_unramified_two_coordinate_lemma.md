@@ -150,7 +150,7 @@ whose projective Euler target is the near-sharp `4p` coefficient.
 The finite verifier
 
 ```bash
-python3 experimental/verify_m1_depth_two_infinity_unramified_two_coordinate_lemma.py
+python3 experimental/scripts/verify_m1_depth_two_infinity_unramified_two_coordinate_lemma.py
 ```
 
 checks the exact ratio identity, the line decomposition, and the claimed

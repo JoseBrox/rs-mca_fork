@@ -219,7 +219,7 @@ verifier.
 The finite verifier
 
 ```bash
-python3 experimental/verify_m1_depth_two_reciprocal_two_coordinate_lemma.py
+python3 experimental/scripts/verify_m1_depth_two_reciprocal_two_coordinate_lemma.py
 ```
 
 checks the exact ratio identities, the projective reciprocal chart changes,

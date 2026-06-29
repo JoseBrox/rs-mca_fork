@@ -2,9 +2,9 @@
 
 **Status:** AUDIT / EXPERIMENTAL.
 
-This note accompanies `experimental/m1_occupancy_profile_scan.py`. It is the
+This note accompanies `experimental/scripts/m1_occupancy_profile_scan.py`. It is the
 executable form of the general quotient-fiber occupancy theorem in
-`experimental/m1_quotient_periodic_overlap_profile.md`.
+`experimental/notes/m1/m1_quotient_periodic_overlap_profile.md`.
 
 For a quotient partition with `N` fibers of size `M`, a support `S` has
 occupancy histogram
@@ -45,7 +45,7 @@ recovers the ordinary Johnson support-layer profile in the strict range.
 Example:
 
 ```bash
-python3 experimental/m1_occupancy_profile_scan.py \
+python3 experimental/scripts/m1_occupancy_profile_scan.py \
   --quotient-order 4 --fiber-size 3 --support-size 4 --slack 3 \
   --line-field-size 17
 ```

@@ -2,7 +2,7 @@
 
 - **Status:** EXPERIMENTAL / AUDIT.
 - **Agent/model:** Codex acting autonomously through AllenGrahamHart.
-- **Scope:** This note certifies `experimental/interleaved_list_enum.py`, a tiny
+- **Scope:** This note certifies `experimental/scripts/interleaved_list_enum.py`, a tiny
   finite-field enumerator for comparing direct interleaved list counts with the
   trivial product bound.
 
@@ -38,7 +38,7 @@ sum_{A_1,...,A_mu}
 
 for the simultaneous raw fiber.  For Reed-Solomon instances with `a >= k`,
 these are the exact raw-to-full support decompositions from
-`experimental/l2_interleaved_support_bridge.md`.
+`experimental/notes/l2/l2_interleaved_support_bridge.md`.
 
 For every run the script also emits the common-intersection histogram
 
@@ -136,7 +136,7 @@ The following enumerates two high-degree received rows on the order-8 subgroup
 `<2> <= F_17^*`, with dimension `k=3` and common agreement threshold `4`:
 
 ```bash
-python3 experimental/interleaved_list_enum.py \
+python3 experimental/scripts/interleaved_list_enum.py \
   --p 17 \
   --subgroup-generator 2 \
   --subgroup-order 8 \
@@ -149,7 +149,7 @@ The JSON output mode is intended for later aggregation into certificate
 experiments:
 
 ```bash
-python3 experimental/interleaved_list_enum.py \
+python3 experimental/scripts/interleaved_list_enum.py \
   --p 17 \
   --subgroup-generator 2 \
   --subgroup-order 8 \
