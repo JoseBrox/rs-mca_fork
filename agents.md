@@ -343,14 +343,15 @@ Planned scripts:
 
 ```text
 scripts/run_frontier.py
-scripts/entropy_margin.py
-scripts/quotient_profile.py
-scripts/restricted_sum_dp.py
-scripts/locator_fiber_scan.py
-scripts/mca_slope_scan.py
-scripts/extension_line_scan.py
-scripts/interleaved_budget.py
-scripts/certificate_emit.py
+experimental/scripts/entropy_margin.py
+experimental/scripts/quotient_profile.py
+experimental/scripts/quotient_profile_dither.py
+experimental/scripts/restricted_sum_dp.py
+experimental/scripts/locator/locator_fiber_sweep/run_locator_fiber_sweep.py
+experimental/scripts/mca_slope_scan.py
+experimental/scripts/f1_extension_slope_sweep.py
+experimental/scripts/interleaved_budget.py
+experimental/scripts/certificate_emit.py
 ```
 
 `scripts/run_frontier.py` is an EXPERIMENTAL Paper B heuristic: it fixes `N = 32` and `l = 18`, expects primes with `32 | p-1`, splits the multiplicative subgroup, and uses meet-in-the-middle enumeration to test coverage of the `psi_2` elementary-symmetric map `(e1, e2)`. Similar frontier heuristics are useful when they isolate one exact quotient, locator, residue-line, or interleaved-list object, make all parameters explicit, and record coverage or counterexample witnesses before anyone tries to promote the pattern to a theorem.
@@ -486,19 +487,32 @@ Give explicit constants, not only asymptotics.
 Attach script, seed, exact command, or symbolic certificate.
 ```
 
-## Good first PRs
+## Good first PRs and current artifacts
 
-1. Implement `quotient_profile.py` for dyadic `n` and dithered `k`.
-2. Implement `entropy_margin.py` and reproduce the reserve inequalities used in the papers.
-3. Write a theorem-label map across the four papers.
-4. Audit older Crites--Stewart/ABF imports used by CA/list comparison routes.
-5. Exhaust `q=17`, `n=16`, `rho=1/2,1/4` for locator fibers and MCA bad slopes.
-6. Compare base-list product bounds with direct interleaved-list enumeration for tiny `mu=2` cases.
-7. Search for the first genuinely extension-valued bad line over `F_{p^2}`.
-8. Produce a JSON schema for Paper C reserve certificates.
-9. Start a Lean formalization of the core definitions, reserve ledgers, quotient identities, and finite certificate statements.
+The original first-implementation items below now have repository artifacts.
+Future agents should audit, extend, or connect them to the papers rather than
+reimplementing them from scratch.
 
-Lean formalization would be very useful for this project, but it has not been done yet. Start small: formalize the finite-field/domain definitions, locator identities, quotient-profile predicates, and exact script-certificate statements before attempting the main local-limit conjectures.
+1. Quotient profiles: `experimental/scripts/quotient_profile.py` and
+   `experimental/scripts/quotient_profile_dither.py`.
+2. Entropy reserve: `experimental/scripts/entropy_margin.py`.
+3. Theorem-label map: `experimental/notes/audits/theorem_label_map.md`.
+4. Crites--Stewart/ABF import audits: `experimental/notes/audits/`.
+5. `q=17`, `n=16`, `rho=1/2,1/4`: `experimental/scripts/verify_q17_locator_mca.py`
+   and `experimental/data/certificates/q17-locator-mca/`.
+6. Interleaved-list comparisons: `experimental/scripts/interleaved_budget.py`
+   and `experimental/scripts/interleaved_list_enum.py`.
+7. Extension-valued bad-line sweeps:
+   `experimental/scripts/f1_extension_slope_sweep.py`.
+8. Paper C reserve-certificate schema:
+   `experimental/data/schemas/reserve_certificate_schema.json`.
+9. Lean starter:
+   `experimental/lean/rs_mca_formalization/`.
+
+Lean formalization remains useful and incomplete. Start small by extending the
+existing finite-field/domain definitions, locator identities, quotient-profile
+predicates, and exact script-certificate statements before attempting the main
+local-limit conjectures.
 
 ## Success criteria
 
